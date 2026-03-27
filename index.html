@@ -1,160 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-* {
-  box-sizing: border-box;
-}
+    <title>Layout Web</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #ddd;
+        }
 
-body {
-  font-family: Arial;
-  margin: 0;
-  background: linear-gradient(to right, #000000, #434343);
-  color: white;
-}
+        .header {
+            background: #ccc;
+            text-align: center;
+            padding: 30px;
+            font-size: 30px;
+            font-weight: bold;
+        }
 
+        .navbar {
+            background: linear-gradient(to right, purple, violet);
+            padding: 10px;
+        }
 
-/* Header */
-.header {
-  padding: 60px;
-  text-align: center;
-  background: url('mobil1.jpg') no-repeat center;
-  background-size: cover;
-  color: white;
-}
+        .navbar a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
 
-.header h1 {
-  font-size: 50px;
-}
+        /* SLIDER KUNING KELAP-KELIP */
+        .slider {
+            background: yellow;
+            text-align: center;
+            padding: 50px;
+            font-weight: bold;
+            font-size: 25px;
+            animation: kedip 1s infinite;
+        }
 
-.header p {
-  font-size: 20px;
-}
+        @keyframes kedip {
+            0%   { background-color: yellow; }
+            50%  { background-color: orange; }
+            100% { background-color: yellow; }
+        }
 
-/* Navbar */
-.topnav {
-  overflow: hidden;
-  background-color: black;
-}
+        .content {
+            display: flex;
+            padding: 20px;
+        }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+        .main {
+            width: 70%;
+            background: #eee;
+            padding: 15px;
+            margin-right: 10px;
+        }
 
-.topnav a:hover {
-  background-color: red;
-}
+        .sidebar {
+            width: 30%;
+            background: #eee;
+            padding: 15px;
+        }
 
-/* Layout */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-/* Card */
-.card {
-  background-color: #1c1c1c;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-}
-
-/* Gambar mobil */
-.car-img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* Clear float */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: black;
-  margin-top: 20px;
-}
-
-/* Responsive */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-</style>
+        h2 {
+            margin-top: 0;
+        }
+    </style>
 </head>
+
 <body>
 
 <div class="header">
-  <h1>FATTAN GARAGE</h1>
-  <p>Drive the Future. Own the Speed</p>
+    Header
 </div>
 
-<div class="topnav">
-  <a href="form.html">Form</a>
-  <a href="portofolio.html">portofolio</a>
-  <a href="materi.html">Materi</a>
-  <a href="#" style="float:right">Login</a>
+<div class="navbar">
+    <a href="form.html">Form Pendaftaran</a>
+    <a href="tes.layout..html">FATTAN GARAGE</a>
+    <a href="portofolio.html">portofolio</a>
 </div>
 
-<div class="row">
-  <div class="leftcolumn">
-
-    <div class="card">
-      <h2>Porsche 911 GT3 RS</h2>
-      <img src="PORSCHE.jpg" class="car-img">
-      <p>Porsche 911 GT3 RS menghadirkan performa balap dengan desain ikonik dan aerodinamika agresif. Diciptakan untuk kecepatan, sempurna bagi pecinta adrenalin sejati.</p>
-    </div>
-
-    <div class="card">
-      <h2>BMW M3 TOURING</h2>
-      <img src="M3.jpg" class="car-img">
-      <p>BMW M3 Touring memadukan tenaga sporty dengan kenyamanan modern. Elegan, cepat, dan praktis—pilihan ideal untuk gaya hidup dinamis.</p>
-    </div>
-
-  </div>
-
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <img src="FOTOGUA.jpeg" width="100%">
-      <p>SAYA FATTAN</p>
-      <p>MAHASISWA DAN PENCINTA MOBIL SPORT CITA CITA PUNYA BMW M3 TOURING</p>
-      <p>OWNER FATTANGARAGE</p>
-    </div>
-
-    <div class="card">
-      <h3>Mobil Populer</h3>
-      <img src="LAMBORGINI.jpg" width="100%">
-      <img src="LAMBOR2.jpg" width="100%">
-    </div>
-
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>@FATTANGARAGE</p>
-    </div>
-  </div>
+<div class="slider">
+    IMAGE SLIDER
 </div>
 
-<div class="footer">
-  <h2>Fattan Garage © 2026</h2>
+<div class="content">
+    
+    <div class="main">
+        <h2>JUDUL HEADING</h2>
+        <small>Judul Deskripsi, 17 Maret, 2025</small>
+        <p><b>Materi Pembelajaran CSS</b></p>
+        <p>
+            Cascading Style Sheets (CSS) adalah bahasa stylesheet yang digunakan 
+            untuk mendesain dan mengatur tampilan halaman web yang ditulis dalam HTML. 
+            CSS memungkinkan programmer untuk memisahkan konten dari desain.
+        </p>
+    </div>
+
+    <div class="sidebar">
+        <h3>KATEGORI</h3>
+        <ol>
+            <li><a href="form.html">Form Pendaftaran</a></li>
+            <li><a href="tes.layout..html">FATTAN GARAGE</a></li>
+            <li><a href="portopolio.html">portopolio FATTANGARAGE</a></li>
+        </ol>
+    </div>
+    
+
 </div>
 
 </body>
