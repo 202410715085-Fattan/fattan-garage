@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portofolio FATTAN</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(135deg, #000000, #2b2b2b, #555555);
+            color: white;
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px;
+            background: black;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            gap: 40px;
+        }
+
+        .foto img {
+            width: 350px;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+        }
+
+        .text {
+            max-width: 500px;
+        }
+
+        .text h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .text p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .foto img {
+                width: 80%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>PORTOFOLIO</h1>
+    <p>FATTANGARAGE</p>
+</div>
+
+<div class="container">
+    
+    <div class="foto">
+        <img src="FOTOGUA.jpeg" alt="Foto Rian">
+    </div>
+
+    <div class="text">
+        <h2>About Me</h2>
+        <p>
+            Nama saya FATTAN panggil aja atan saya yang buat FATTANGARAGE
+        </p>
+        <p>
+            seperti yang sudah saya katakan cita cita saya mau mempunyai mobil BMW M3 TOURING di umur 25
+        </p>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>© 2026 FATTANGARAGE</p>
+</div>
+
+</body>
+</html>
