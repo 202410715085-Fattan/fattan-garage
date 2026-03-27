@@ -1,19 +1,161 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style2.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background: linear-gradient(to right, #000000, #434343);
+  color: white;
+}
+
+
+/* Header */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: url('mobil1.jpg') no-repeat center;
+  background-size: cover;
+  color: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.header p {
+  font-size: 20px;
+}
+
+/* Navbar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: red;
+}
+
+/* Layout */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Card */
+.card {
+  background-color: #1c1c1c;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Gambar mobil */
+.car-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Clear float */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
 </head>
 <body>
-	<header><h1>SELAMAT DATANG</h1></header>
 
-	<div class="leftcolumn"> 
-		<h1>KOLOM KIRI</h1>
-	</div>
-	<div class="rightcolumn">
-		<h1>KOLOM KANAN</h1>
-	</div>
-	<br>
+<div class="header">
+  <h1>FATTAN GARAGE</h1>
+  <p>Drive the Future. Own the Speed</p>
+</div>
 
-	<div class="footer"> <h1>FOOTER</h1></div>
+<div class="topnav">
+  <a href="form.html">Form</a>
+  <a href="portofolio.html">portofolio</a>
+  <a href="materi.html">Materi</a>
+  <a href="#" style="float:right">Login</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+
+    <div class="card">
+      <h2>Porsche 911 GT3 RS</h2>
+      <img src="PORSCHE.jpg" class="car-img">
+      <p>Porsche 911 GT3 RS menghadirkan performa balap dengan desain ikonik dan aerodinamika agresif. Diciptakan untuk kecepatan, sempurna bagi pecinta adrenalin sejati.</p>
+    </div>
+
+    <div class="card">
+      <h2>BMW M3 TOURING</h2>
+      <img src="M3.jpg" class="car-img">
+      <p>BMW M3 Touring memadukan tenaga sporty dengan kenyamanan modern. Elegan, cepat, dan praktis—pilihan ideal untuk gaya hidup dinamis.</p>
+    </div>
+
+  </div>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="FOTOGUA.jpeg" width="100%">
+      <p>SAYA FATTAN</p>
+      <p>MAHASISWA DAN PENCINTA MOBIL SPORT CITA CITA PUNYA BMW M3 TOURING</p>
+      <p>OWNER FATTANGARAGE</p>
+    </div>
+
+    <div class="card">
+      <h3>Mobil Populer</h3>
+      <img src="LAMBORGINI.jpg" width="100%">
+      <img src="LAMBOR2.jpg" width="100%">
+    </div>
+
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>@FATTANGARAGE</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Fattan Garage © 2026</h2>
+</div>
+
 </body>
 </html>
